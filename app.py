@@ -25,7 +25,7 @@ def kubernetes_playful():
 
 @app.route('/something', methods=['GET'])
 def something_playful():
-    message = 'Something is better than nothing.! LOL! '
+    message = 'Something is better than nothing.! LOL! haha '
     return message
 
 if __name__ == '__main__':
