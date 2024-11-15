@@ -23,7 +23,7 @@ def kubernetes_playful():
     message = 'Welcome to the world of Docker!'
     return message
 
-@app.route('/some', methods=['GET'])
+@app.route('/something', methods=['GET'])
 def something_playful():
     message = 'Something is better than nothing.! LOL! haha '
     return message
