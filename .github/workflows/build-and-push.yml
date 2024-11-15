@@ -19,7 +19,7 @@ jobs:
         run: docker build -t python-app .
 
       - name: Tag the Docker Image
-        run: docker tag python-app:latest ${{ secrets.DOCKERHUB_USERNAME }}/firstrepo:${GITHUB_SHA}
+        run: docker tag python-app:latest ${{ secrets.DOCKER_USERNAME }}/firstrepo:${GITHUB_SHA}
 
       - name: Push the Docker Image
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/firstrepo:${GITHUB_SHA}
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/firstrepo:${GITHUB_SHA}
